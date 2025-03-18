@@ -1,0 +1,138 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.container {
+  text-align: center;
+  margin: 20px auto;
+}
+
+h2 {
+  color: #343a40;
+  font-weight: 700;
+}
+
+.create-employee {
+  margin: 20px 0;
+}
+
+.create-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.create-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.search-bar {
+  text-align: center;
+  margin: 20px auto;
+}
+
+#searchField {
+  padding: 12px;
+  width: 300px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#searchButton {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#searchButton:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.employee-table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.employee-table th,
+.employee-table td {
+  border: 1px solid #dee2e6;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.employee-table th {
+  background-color: #007bff;
+  color: white;
+  font-weight: 500;
+}
+
+.employee-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.employee-table tr:hover {
+  background-color: #e9ecef;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+  transform: scale(1.05);
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+.button-group{
+  display: flex;
+  gap: 10px;
+}
+
+
+
