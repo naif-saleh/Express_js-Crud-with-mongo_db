@@ -9,7 +9,7 @@ const employeeSchema = new Schema({
     country: String,
     age: Number,
     gender: String,
-});
+}, {timestamps: true});
 
 
 const Employee = mongoose.model('Employee', employeeSchema);

@@ -75,5 +75,5 @@ Feel free to contribute! Fork the repo, make your changes, and submit a pull req
 This project is open-source under the **MIT License**.
 
 ---
-_Developed by [Your Name]_
+_Developed by [Naif Saleh]_
 

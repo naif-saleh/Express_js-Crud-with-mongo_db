@@ -100,7 +100,7 @@ h2 {
 }
 
 .edit-btn,
-.delete-btn {
+.delete-btn ,.edit-secondry{
   padding: 8px 12px;
   border: none;
   border-radius: 5px;
@@ -108,6 +108,7 @@ h2 {
   font-size: 14px;
   font-weight: 500;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
 }
 
 .edit-btn {
@@ -123,6 +124,15 @@ h2 {
 .delete-btn {
   background-color: #dc3545;
   color: white;
+}
+
+.edit-secondry{
+  background-color: rgb(59, 134, 204);
+  color: white;
+}
+.edit-secondry:hover {
+  background-color: rgb(34, 119, 197);
+  transform: scale(1.05);
 }
 
 .delete-btn:hover {

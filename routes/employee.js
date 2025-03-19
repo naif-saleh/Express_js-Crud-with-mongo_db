@@ -1,32 +1,18 @@
-import express from 'express';
-import Employee from '../models/employeeSchema.js';
+import express from "express";
+import Employee from "../models/employeeSchema.js";
+import { getEmployee, getEmployeeById, editEmployee, updateEmployee, addEmployee, createEmployee, deleteEmployee, searchEmployee } from "../controller/employee.js";
+
 const router = express.Router();
 
+router.post("/add-employee", addEmployee);
+router.get("/create", createEmployee);
+router.get("/", getEmployee);
+router.get("/employee/:id", getEmployeeById);
+router.get("/edit/:id", editEmployee);
+router.post("/update-employee/:id", updateEmployee);
+router.get("/delete/:id", deleteEmployee);
+router.get("/search", searchEmployee);
 
-
-
-router.get('', async (_, res) => {
-   Employee.find().then((employee)=>{
-    console.log(employee)
-         res.render('index', {arr: employee});
-   }).catch(err=>{
-    console.log(err);
-   })
-});
-
-
-router.get('/create', (_, res)=>{
-    res.render('create');
-})
-
-router.post('/add-employee', (req, res)=>{
-    const employee = new Employee(req.body);
-    employee.save().then(()=>{
-        res.redirect('/');
-    }) .catch(err => {
-        console.log(err);
-    })
-})
 
 
 export default router;
